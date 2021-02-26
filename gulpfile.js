@@ -11,7 +11,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const rename = require('gulp-rename');
-const nunjucksRender = require('gulp-nunjucks-render');
+// const nunjucksRender = require('gulp-nunjucks-render');
 const del = require('del');
 const browserSync = require('browser-sync').create();
 
@@ -102,7 +102,7 @@ function cleanDist() {
 
 function watching() {
   watch(['app/**/*.scss'], styles);
-  watch(['app/*.njk'], nunjucks);
+  // watch(['app/*.njk'], nunjucks);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
   watch(['app/**/*.html']).on('change', browserSync.reload);
 }

@@ -1,1 +1,16 @@
 
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  background: linear-gradient(180deg, #B8E5FF 0%, rgba(184, 229, 255, 0.0260417) 97.4%, rgba(189, 239, 255, 0) 100%);
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+}
+
