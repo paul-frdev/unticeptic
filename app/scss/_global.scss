@@ -1,4 +1,3 @@
-
 .container {
   max-width: 1170px;
   padding: 0 15px;
@@ -7,10 +6,143 @@
 
 .header {
   background: linear-gradient(180deg, #B8E5FF 0%, rgba(184, 229, 255, 0.0260417) 97.4%, rgba(189, 239, 255, 0) 100%);
+
   &__top {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
   }
-}
 
+  .nav {
+    display: flex;
+    flex-direction: column;
+
+    &__link {
+      position: relative;
+      @extend %opensans-700;
+      font-size: 18px;
+      color: #000;
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 4px;
+        left: -26px;
+        width: 20px;
+        height: 20px;
+        background-image: url('../images/icons/phone-icon.svg');
+        background-repeat: no-repeat;
+      }
+    }
+
+    &__btn {
+      @extend %raleway-400;
+      font-size: 12px;
+      text-align: right;
+      text-decoration: underline;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 130px);
+    padding-top: 113px;
+  }
+
+  &__content-item {
+    max-width: 670px;
+    min-height: 293px;
+    z-index: 5;
+  }
+
+  &__content-title {
+    @extend %raleway-700;
+    font-size: 48px;
+    line-height: 1.1;
+    padding-bottom: 35px;
+  }
+
+  &__content-title span {
+    display: block;
+    color: #30A2E4;
+  }
+
+  &__content-text {
+    max-width: 440px;
+    @extend %raleway-400;
+    font-size: 22px;
+    line-height: 1.2;
+    padding-bottom: 40px;
+  }
+
+  &__content-nav {
+    display: flex;
+  }
+
+  &__content-link {
+    @extend %opensans-400;
+    color: #000;
+    padding: 15px 40px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(69, 69, 69, 0.3);
+    border-radius: 5px;
+    margin-right: 30px;
+  }
+
+  &__content-btn {
+    @extend %raleway-400;
+    font-size: 16px;
+    padding: 15px 40px;
+    color: #fff;
+    background: linear-gradient(180deg, #1C8BCC 0%, #30A2E4 100%);
+    box-shadow: 0px 0px 10px rgba(69, 69, 69, 0.3);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  &__content-img {
+    position: absolute;
+    right: -62px;
+    top: 0;
+    max-width: 665px;
+    min-height: 555px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    object-fit: cover;
+    z-index: 4;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__bottom-item {
+    position: relative;
+    max-width: 237px;
+    padding-left: 38px;
+    &:last-child {
+      max-width: 200px;
+    }
+  }
+  &__bottom-img {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__bottom-text {
+    @extend %raleway-300;
+    font-size: 14px;
+  }
+
+
+}
