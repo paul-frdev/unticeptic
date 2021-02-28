@@ -18,7 +18,7 @@
         </a>
         <div class="nav">
           <a class="nav__link" href="tel:88003334455">8 (800) 333-44-55</a>
-          <button class="nav__btn">Позвоните мне</button>
+          <a class="nav__btn" href="#popup">Позвоните мне</a>
         </div>
       </div>
       <div class="header__content">
@@ -29,7 +29,7 @@
             для заказа количество товара на складе:</p>
           <div class="header__content-nav">
             <a class="header__content-link" href="tel:88003334455">8(800) 333 44 55</a>
-            <button class="header__content-btn" type="submit">Оставить заявку</button>
+            <a class="header__content-btn" href="#popup">Оставить заявку</a>
           </div>
         </div>
         <img class="header__content-img" src="images/top-banner.png" alt="антисептик">
@@ -146,7 +146,7 @@
                 Успейте сделать заказ!</span></h1>
             <div class="footer-form__nav">
               <a class="footer-form__link" href="tel:88003334455">8(800) 333 44 55</a>
-              <button class="footer-form__btn" type="submit">Оставить заявку</button>
+              <a class="footer-form__btn" href="#popup">Оставить заявку</a>
             </div>
           </div>
         </div>
@@ -160,7 +160,23 @@
     </div>
   </footer>
 
-
+  <div id="popup" class="popup">
+    <a href="#" class="popup__area"></a>
+    <div class="popup__body">
+      <div class="popup__content">
+        <a href="#" class="popup__close close-popup">
+          <img class="popup__close-img" src="images/icons/close.svg" alt="close">
+        </a>
+        <h3 class="popup__title">Подать заявку</h3>
+        <p class="popup__text">Введите свои данные и наш менеджер свяжется с Вами в ближайшее время.</p>
+        <form class="popup__form">
+          <input class="popup__input-text" type="text" placeholder="Ваше имя" required>
+          <input class="popup__input-tel" type="tel:380987654321" placeholder="+38 098 76 54 321" required>
+          <button class="popup__btn">Подать заявку</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <script src="js/main.min.js"></script>
 </body>
