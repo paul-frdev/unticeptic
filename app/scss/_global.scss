@@ -46,6 +46,7 @@
     &__btn {
       @extend %raleway-400;
       font-size: 12px;
+      color: #000;
       text-align: right;
       text-decoration: underline;
       padding: 0;
@@ -495,6 +496,7 @@
 
   &__input-text,
   &__input-tel {
+    width: 205px;
     padding: 18px 20px;
     margin-bottom: 30px;
     background-color: #FFFFFF;
@@ -511,6 +513,7 @@
   }
 
   &__btn {
+    width: 205px;
     padding: 15px 48px;
     margin-bottom: 15px;
     background: linear-gradient(180deg, #1C8BCC 0%, #30A2E4 100%);
